@@ -35,7 +35,7 @@ server.port: 8080
 #management.endpoints.shutdown.enabled: true
 
 #mainnet
-spring.data.mongodb.uri:mongodb: //172.18.0.2:27017/memPool
+spring.data.mongodb.uri: mongodb://172.18.0.2:27017/memPool
 
 logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG
 
