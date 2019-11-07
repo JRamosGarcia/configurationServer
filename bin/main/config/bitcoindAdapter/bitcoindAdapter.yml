@@ -8,6 +8,22 @@ bitcoind:
   user: anon
   password: anon
 
+#Profiles
+spring:
+  profiles:
+    active:
+      default
+
+# Service Discovery
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://172.18.0.5:8761/eureka/
+
 
 # Spring actuator configuration.
 #mainnet
