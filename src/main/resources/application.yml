@@ -9,4 +9,4 @@ spring:
 #         git:
 #           uri: file:///home/tomillo/Desktop/config
          native:
-          searchLocations: classpath:config/,classpath:config/bitcoindAdapter
+          searchLocations: classpath:config/,classpath:config/bitcoindAdapter,classpath:config/txMemPool
