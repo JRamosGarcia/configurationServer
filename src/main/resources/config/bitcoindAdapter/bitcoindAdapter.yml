@@ -1,8 +1,8 @@
 
 # bitcoind client configuration.
 bitcoind:
-  host: 192.168.1.38
-  port: 8332 #mainnet
+#  host: 192.168.1.38
+#  port: 8332 #mainnet
 #testNet
 #  port: 18332
   user: anon
@@ -12,7 +12,7 @@ bitcoind:
 spring:
   profiles:
     active:
-      default
+      prod,mainNet
 
 # Service Discovery
 eureka:
@@ -21,15 +21,15 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://172.18.0.5:8761/eureka/
+#    serviceUrl:
+#      defaultZone: http://172.18.0.5:8761/eureka/
 
 
 # Spring actuator configuration.
 management:
-  server:
+#  server:
 #    address: 172.18.0.3
-    port: 8081
+#    port: 8081
   endpoints:
     jmx.exposure.exclude: "*"
     web.exposure.include: "*"
@@ -41,7 +41,7 @@ management:
 
 
 #mainnet
-server.port: 8080
+#server.port: 8080
 #testnet
 #server.port: 8088
 

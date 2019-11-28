@@ -5,14 +5,14 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://172.18.0.5:8761/eureka/
+#    serviceUrl:
+#      defaultZone: http://172.18.0.5:8761/eureka/
 
 # Spring actuator configuration.
 management:
-  server:
-    address: 172.18.0.6
-    port: 8081
+#  server:
+#    address: 172.18.0.6
+#    port: 8081
   endpoints:
     jmx.exposure.exclude: "*"
     web.exposure.include: "*"
@@ -21,6 +21,8 @@ management:
     show-components: always
     show-details: always
   configprops.enabled: true
+
+#server.port: 8080
 
 # Enable shutdown (BE CAREFUL)
 #management.endpoints.shutdown.enabled: true
