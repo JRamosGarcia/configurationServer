@@ -13,6 +13,17 @@ spring:
   profiles:
     active:
       prod,mainNet
+  cloud:
+    stream:
+      bindings:
+        output:
+            destination: memPool.tx.changes
+            content-type: application/json
+#      kafka:
+#        binder:
+#          zkNodes: localhost
+#          brokers: localhost
+
 
 # Service Discovery
 eureka:
