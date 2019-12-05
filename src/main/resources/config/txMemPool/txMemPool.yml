@@ -8,6 +8,24 @@ eureka:
 #    serviceUrl:
 #      defaultZone: http://172.18.0.5:8761/eureka/
 
+#Profiles and msgQueue
+spring:
+  profiles:
+    active:
+      prod,mainNet
+  cloud:
+    stream:
+      bindings:
+        txMemPoolChanges:
+          destination: memPool.tx.changes
+          content-type: application/json
+          group: txMemPool
+#      kafka:
+#        binder:
+#          zkNodes: localhost
+#          brokers: localhost
+
+
 # Spring actuator configuration.
 management:
 #  server:

@@ -8,7 +8,7 @@ bitcoind:
   user: anon
   password: anon
 
-#Profiles
+#Profiles and msgQueue
 spring:
   profiles:
     active:
@@ -16,7 +16,7 @@ spring:
   cloud:
     stream:
       bindings:
-        output:
+        txMemPoolChanges:
             destination: memPool.tx.changes
             content-type: application/json
 #      kafka:
