@@ -16,8 +16,8 @@ spring:
   cloud:
     stream:
       bindings:
-        txMemPoolChanges:
-            destination: memPool.tx.changes
+        txMemPoolEvents:
+            destination: memPool.tx.events
             content-type: application/json
 #      kafka:
 #        binder:
@@ -74,3 +74,4 @@ bitcoindadapter:
   maxMemPoolSizeReturnedInTxNumber: "300"
   memPoolChangesSize: "10"
   newBlockListSize: "3"
+  sendAllTxOnStart: true

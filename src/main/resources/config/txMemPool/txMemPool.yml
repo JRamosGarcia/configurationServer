@@ -16,8 +16,8 @@ spring:
   cloud:
     stream:
       bindings:
-        txMemPoolChanges:
-          destination: memPool.tx.changes
+        txMemPoolEvents:
+          destination: memPool.tx.events
           content-type: application/json
           group: txMemPool
 #      kafka:
@@ -46,3 +46,7 @@ management:
 #management.endpoints.shutdown.enabled: true
 
 #logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+
+txmempool:
+  refreshCountToCreateNewMiningQueue: 5
+  miningQueueNumTxs: 10000
