@@ -38,9 +38,9 @@ eureka:
 
 # Spring actuator configuration.
 management:
-#  server:
+  server:
 #    address: 172.18.0.3
-#    port: 8081
+    port: 8081
   endpoints:
     jmx.exposure.exclude: "*"
     web.exposure.include: "*"
@@ -71,7 +71,7 @@ bitcoindadapter:
   loadDBOnStart: "true"
   saveDBOnStart: "true"
   saveDBOnRefresh: "true"
-  maxMemPoolSizeReturnedInTxNumber: "300"
+  maxMemPoolSizeReturnedInTxNumber: "0"
   memPoolChangesSize: "10"
   newBlockListSize: "3"
   sendAllTxOnStart: true
