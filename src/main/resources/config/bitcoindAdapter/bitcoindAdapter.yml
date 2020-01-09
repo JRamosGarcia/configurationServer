@@ -75,3 +75,4 @@ bitcoindadapter:
   memPoolChangesSize: "10"
   newBlockListSize: "3"
   sendAllTxOnStart: true
+  useGetRawMemPool: false
