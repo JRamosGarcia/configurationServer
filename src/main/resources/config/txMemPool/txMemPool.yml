@@ -20,11 +20,12 @@ spring:
           destination: memPool.tx.events
           content-type: application/json
           group: txMemPool
-#      kafka:
-#        binder:
+      kafka:
+        binder:
 #          zkNodes: localhost
 #          brokers: localhost
-
+          configuration:
+            max.request.size: 2000000
 
 # Spring actuator configuration.
 management:

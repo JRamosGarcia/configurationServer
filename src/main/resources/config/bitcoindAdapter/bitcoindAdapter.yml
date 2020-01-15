@@ -19,10 +19,12 @@ spring:
         txMemPoolEvents:
             destination: memPool.tx.events
             content-type: application/json
-#      kafka:
-#        binder:
+      kafka:
+        binder:
 #          zkNodes: localhost
 #          brokers: localhost
+          configuration:
+            max.request.size: 2000000
 
 
 # Service Discovery
