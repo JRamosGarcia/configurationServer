@@ -24,7 +24,7 @@ spring:
 #          zkNodes: localhost
 #          brokers: localhost
           configuration:
-            max.request.size: 2000000
+            max.request.size: 4000000
 
 
 # Service Discovery
@@ -77,4 +77,3 @@ bitcoindadapter:
   memPoolChangesSize: "10"
   newBlockListSize: "3"
   sendAllTxOnStart: true
-  useGetRawMemPool: false

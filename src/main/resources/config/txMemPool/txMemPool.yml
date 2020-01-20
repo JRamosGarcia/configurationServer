@@ -25,7 +25,7 @@ spring:
 #          zkNodes: localhost
 #          brokers: localhost
           configuration:
-            max.request.size: 2000000
+            max.request.size: 4000000
 
 # Spring actuator configuration.
 management:
