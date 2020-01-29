@@ -52,3 +52,6 @@ txmempool:
   refreshCountToCreateNewMiningQueue: 5
   miningQueueNumTxs: 10000
   miningQueueMaxNumBlocks: 3
+  liveMiningQueueMaxTxs: 100000
+  liveMiningQueueMaxSatByteListSize: 500
+  
