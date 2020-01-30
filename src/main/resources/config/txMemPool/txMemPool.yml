@@ -50,8 +50,8 @@ management:
 
 txmempool:
   refreshCountToCreateNewMiningQueue: 5
-  miningQueueNumTxs: 10000
-  miningQueueMaxNumBlocks: 3
+  miningQueueNumTxs: 100000
+  miningQueueMaxNumBlocks: 30
   liveMiningQueueMaxTxs: 100000
   liveMiningQueueMaxSatByteListSize: 500
-  
+  maxLiveIgnoringBlocksCircularQueueSize: 100
