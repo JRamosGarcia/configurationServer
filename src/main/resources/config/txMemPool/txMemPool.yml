@@ -53,5 +53,5 @@ txmempool:
   miningQueueNumTxs: 100000
   miningQueueMaxNumBlocks: 30
   liveMiningQueueMaxTxs: 100000
-  liveMiningQueueMaxSatByteListSize: 500
+  liveMiningQueueGraphSize: 500
   maxLiveIgnoringBlocksCircularQueueSize: 100
