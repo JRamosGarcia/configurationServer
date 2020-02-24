@@ -20,6 +20,9 @@ spring:
           destination: memPool.tx.events
           content-type: application/json
           group: mempoolRecorder
+        sonbEvents:
+          destination: sonb.events
+          content-type: application/json
       kafka:
         binder:
 #          zkNodes: localhost
@@ -47,3 +50,5 @@ management:
 #management.endpoints.shutdown.enabled: true
 
 #logging.level.org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+
+#mempoolRecorder:

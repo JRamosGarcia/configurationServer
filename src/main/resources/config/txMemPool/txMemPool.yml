@@ -17,7 +17,7 @@ spring:
     stream:
       bindings:
         txMemPoolEvents:
-          destination: memPool.tx.events
+          #destination: memPool.tx.events
           content-type: application/json
           group: txMemPool
       kafka:
