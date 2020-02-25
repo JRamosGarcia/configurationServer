@@ -57,3 +57,5 @@ txmempool:
   maxLiveIgnoringBlocksCircularQueueSize: 100
   numTimesTxIgnoredToRaiseAlarm: 3
   numTxMinedButNotInMemPoolToRaiseAlarm: 10
+  liveAlgorithmDiffsEnabled: false
+  
