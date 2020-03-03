@@ -54,7 +54,7 @@ txmempool:
   miningQueueMaxNumBlocks: 30
   liveMiningQueueMaxTxs: 100000
   liveMiningQueueGraphSize: 500
-  maxLiveIgnoringBlocksCircularQueueSize: 100
+  maxLiveDataBufferSize: 100
   numTimesTxIgnoredToRaiseAlarm: 3
   numTxMinedButNotInMemPoolToRaiseAlarm: 10
   liveAlgorithmDiffsEnabled: false
