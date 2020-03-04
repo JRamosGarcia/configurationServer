@@ -56,6 +56,7 @@ txmempool:
   liveMiningQueueGraphSize: 500
   maxLiveDataBufferSize: 100
   numTimesTxIgnoredToRaiseAlarm: 3
+  totalSatVBLostToRaiseAlarm: 3
   numTxMinedButNotInMemPoolToRaiseAlarm: 10
   liveAlgorithmDiffsEnabled: false
   
