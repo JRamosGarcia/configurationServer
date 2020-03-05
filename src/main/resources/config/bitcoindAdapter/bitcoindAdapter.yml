@@ -10,9 +10,9 @@ bitcoind:
 
 #Profiles and msgQueue
 spring:
-  profiles:
-    active:
-      prod,mainNet
+#  profiles:
+#    active:
+#      prod,mainNet
   cloud:
     stream:
       bindings:
@@ -25,6 +25,9 @@ spring:
 #          brokers: localhost
           configuration:
             max.request.size: 4000000
+  output:
+    ansi:
+      enabled: always
 
 
 # Service Discovery
